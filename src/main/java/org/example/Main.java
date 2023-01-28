@@ -12,11 +12,13 @@ public class Main {
         }
         int first = 1;
         int second = number-first;
-        while (!(isPrime(first)&isPrime(second))){
+        while (second != 0){
+            if(isPrime(first)&isPrime(second)){
+                System.out.printf("%d + %d = %d\n", first, second, number);
+            }
             first++;
-            second = number-first;
+            second = number - first;
         }
-        System.out.printf("First: %d, Second: %d", first, second);
     }
     static boolean isPrime(int num){
         for(int i = 2 ; i < num; i++){
