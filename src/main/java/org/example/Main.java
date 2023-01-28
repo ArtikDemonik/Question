@@ -7,7 +7,8 @@ public class Main {
         Scanner in = new Scanner(System.in);
         System.out.print("Type number: ");
         int number = in.nextInt();
-        if (number%2!=0){
+        if (isPrime(number)){
+            System.out.println("Is prime");
             return;
         }
         int first = 1;
